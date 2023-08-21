@@ -134,9 +134,9 @@ echo "3. ACTION: metadata"
 # download all species and metabolite derby database files into top level dir
 
 # cache dependencies
-if [ ! -e ./meta-data-action-1.0.8-jar-with-dependencies.jar ]; then
-    wget -O meta-data-action-1.0.8-jar-with-dependencies.jar https://github.com/wikipathways/meta-data-action/releases/download/1.1.0/meta-data-action-1.0.8-jar-with-dependencies.jar
-    chmod 777 meta-data-action-1.0.8-jar-with-dependencies.jar
+if [ ! -e ./meta-data-action-1.1.1-jar-with-dependencies.jar ]; then
+    wget -O meta-data-action-1.1.1-jar-with-dependencies.jar https://github.com/wikipathways/meta-data-action/releases/download/1.1.1/meta-data-action-1.1.1-jar-with-dependencies.jar
+    chmod 777 meta-data-action-1.1.1-jar-with-dependencies.jar
 fi
 
 for f in ${changed_gpmls[@]}; do
@@ -146,7 +146,7 @@ for f in ${changed_gpmls[@]}; do
     echo "generating info and datanode files for $wpid ($f)"
     cat gdb.config
     # NOTE: Adapt date arg for macOS (-u) or linux (--utc)
-    java -jar meta-data-action-1.0.8-jar-with-dependencies.jar local pathways/"$wpid"/"$wpid".gpml $(date -u +%F) gdb.config "$org" || echo "$wpid FAILED"
+    java -jar meta-data-action-1.1.1-jar-with-dependencies.jar local pathways/"$wpid"/"$wpid".gpml $(date -u +%F) gdb.config "$org" || echo "$wpid FAILED"
 done
 
 ##############################
@@ -199,8 +199,8 @@ done
 ##############################
 echo "6. ACTION: homologyConversion"
 # NOTE: requires Java 8 
-if [ ! -e ./Hs_Derby_Ensembl_104.bridge ]; then
-    wget -O Hs_Derby_Ensembl_104.bridge "https://zenodo.org/record/6367091/files/Hs_Derby_Ensembl_104.bridge?download=1"                         
+if [ ! -e ./Hs_Derby_Ensembl_108.bridge ]; then
+    wget -O Hs_Derby_Ensembl_108.bridge "https://zenodo.org/record/7781913/files/Hs_Derby_Ensembl_108.bridge?download=1"
 fi
 
 for f in ${changed_gpmls[@]}; do

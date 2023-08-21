@@ -1,4 +1,4 @@
-name: Notify slack on author list change
+name: When author added, notify Slack
 on:
   push:
     branches:

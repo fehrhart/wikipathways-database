@@ -1,4 +1,8 @@
 Label	Type	Identifier	Comment	Ensembl	NCBI gene	HGNC	UniProt	Wikidata	ChEBI	InChI
+Vitamin D	Metabolite	chebi:27300						wikidata:Q175621	chebi:27300;chebi:27300	
+Vitamin D	Metabolite	chebi:27300						wikidata:Q175621	chebi:27300;chebi:27300	
+Sodium	Metabolite	chebi:29101						wikidata:Q3154110	chebi:29101;chebi:29101	inchikey:FKNQFGJONOIPTF-UHFFFAOYSA-N
+Phosphate	Metabolite	chebi:18367						wikidata:Q177811	chebi:18367;chebi:18367	inchikey:NBIIXXVUZAFLBC-UHFFFAOYSA-K
 Parathyroid hormone	GeneProduct	ncbigene:24694		ensembl:ENSRNOG00000014318	ncbigene:24694		uniprot:P04089			
 Osteoprotegerin	GeneProduct	ncbigene:25341								
 RANK ligand	GeneProduct	ncbigene:117516		ensembl:ENSRNOG00000071047	ncbigene:117516		uniprot:G3V794			

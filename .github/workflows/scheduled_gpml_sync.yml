@@ -1,4 +1,4 @@
-name: Sync GPML changes daily
+name: Daily sync of GPML from classic site
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true # to cancel a run if another is triggered
 
 jobs:
-  sync:
+  classic-sync:
     runs-on: ubuntu-latest
     steps:
         
@@ -23,7 +23,7 @@ jobs:
           ref: main
           
       - name: Setup Java
-        uses: actions/setup-java@v2
+        uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
           java-version: '8'
@@ -61,7 +61,8 @@ jobs:
           if git diff --exit-code --staged; then
               echo "No changes"
           else
-              git commit -m 'Sync GPML files'
+              git commit -m 'Process GPML changes'
+              git pull --rebase
           fi
       
       - name: Push as user

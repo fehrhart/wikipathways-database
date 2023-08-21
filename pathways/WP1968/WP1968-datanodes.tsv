@@ -14,7 +14,7 @@ Smad2	GeneProduct	ensembl:ENSRNOG00000018140		ensembl:ENSRNOG00000018140	ncbigen
 TGF-beta R1/2	GeneProduct	ensembl:ENSRNOG00000002418		ensembl:ENSRNOG00000002418	ncbigene:81809		uniprot:G3V6B1;uniprot:Q496Y8			
 Ccnd1	GeneProduct	ensembl:ENSRNOG00000020918		ensembl:ENSRNOG00000020918	ncbigene:58919		uniprot:P39948;uniprot:Q1JUA4			
 Cdk4	GeneProduct	ensembl:ENSRNOG00000025602		ensembl:ENSRNOG00000025602			uniprot:P35426			
-RB 	GeneProduct	ensembl:ENSRNOG00000016029		ensembl:ENSRNOG00000016029	ncbigene:24708		uniprot:R9PXV5;uniprot:P33568			
+RB	GeneProduct	ensembl:ENSRNOG00000016029		ensembl:ENSRNOG00000016029	ncbigene:24708		uniprot:R9PXV5;uniprot:P33568			
 E2F	GeneProduct	ensembl:ENSRNOG00000016708		ensembl:ENSRNOG00000016708	ncbigene:399489;ncbigene:311562		uniprot:D3ZKY0;uniprot:O09139;uniprot:A0A0G2JWW3			
 Dmp1	GeneProduct	ensembl:ENSRNOG00000002167		ensembl:ENSRNOG00000002167	ncbigene:25312		uniprot:A2VD06			
 Mdm2	GeneProduct	ensembl:ENSRNOG00000006304		ensembl:ENSRNOG00000006304	ncbigene:314856		uniprot:D3ZVH5;uniprot:A0A0G2JVC1			
